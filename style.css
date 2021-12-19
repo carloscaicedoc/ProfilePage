@@ -64,18 +64,20 @@ body {
 .cointainer {
     width: 1080px;
     margin: 0 auto;
-    justify-content: center;
+}
+
+.row {
     display: flex;
 }
 
-.leftcolumn {
-    display: flex;
+.col-2, .col {
+    margin: 10px;
+    padding: 10px;
     flex: 1;
 }
 
 .col-2 {
-    margin: 10px;
-    padding: 10px;
+    flex: 2
 }
 
 
@@ -90,7 +92,7 @@ body {
 .nametag-card {
     background-color: rgb(241, 241, 241);
     width: 450px;
-    height: 330px;
+    height: 290px;
     border-style: solid;
     border-width: 3px;
     border-radius: 5px;
@@ -126,9 +128,9 @@ img {
     text-decoration: underline;
 }
 
-.colums {
+/* .colums {
     display: block;
-}
+} */
 
 /* EDUCATION BAR */
 
@@ -177,29 +179,64 @@ img {
     margin-bottom: 8px;
 }
 
-.rightcolumn {
-    display: flex;
-    flex: 4;
-
+.requests {
+    background-color: rgb(241, 241, 241);
+    width: 290px;
+    height: 240px;
+    border-style: solid;
+    border-width: 3px;
+    border-radius: 5px;
+    border-color: lightgray;
+    margin-bottom: 5px;
 }
 
-.contacts {
-        background-color: rgb(241, 241, 241);
-        width: 450px;
-        height: 350px;
-        border-style: solid;
-        border-width: 3px;
-        border-radius: 5px;
-        border-color: lightgray;
-        margin-bottom: 5px;
+.con-title {
+    font-size: 20px;
+    color: white;
+    padding-top: 15px;
+    padding-left: 18px;
 }
 
-.header {
+.greybar2 {
     background-color: rgb(56, 55, 55);
-    justify-content: flex-start;
-    align-items: center;
+    display: block;
+    height: 40px;
+    text-align: left; 
+}
+
+.friends {
+    background-color: rgb(241, 241, 241);
+    width: 290px;
+    height: 290px;
+    border-style: solid;
+    border-width: 3px;
+    border-radius: 5px;
+    border-color: lightgray;
+    margin-bottom: 5px;
+}
+
+.friends-title {
+    font-size: 20px;
+    color: white;
+    padding-top: 15px;
+    padding-left: 18px;
 }
 
 .avatar-s {
-    height: 35px;
+    border-radius: 50%;
+    height: 48px;
+    margin-right: 10px;
 }
+
+.user-line {
+    display: flex;
+    justify-content: space-between;
+    margin: 20px;
+}
+
+.start, .end {
+    display: flex;
+    align-items: center;
+    font-size: 24px;
+}
+
